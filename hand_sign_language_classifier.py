@@ -120,10 +120,8 @@ def classify_images(fn_arr, model):
 
 if __name__ == "__main__":
     # Load the dataset
-    training_images, training_labels \
-        = get_data(os.getcwd() + "/datasets/sign_mnist_train.csv")
-    validation_images, validation_labels \
-        = get_data(os.getcwd() + "/datasets/sign_mnist_test.csv")
+    training_images, training_labels = get_data(os.getcwd() + "/datasets/sign_mnist_train.csv")
+    validation_images, validation_labels = get_data(os.getcwd() + "/datasets/sign_mnist_test.csv")
     print(training_images.shape)
     print(training_labels.shape)
     print(validation_images.shape)
